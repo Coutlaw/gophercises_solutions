@@ -4,3 +4,8 @@
 *.so
 *.dylib
 
+# Ignore binarys and files without extensions 
+*
+!/**/
+!*.*
+

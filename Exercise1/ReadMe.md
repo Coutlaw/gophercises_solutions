@@ -32,8 +32,6 @@ You can assume that quizzes will be relatively short (< 100 questions) and will 
 
 At the end of the quiz the program should output the total number of questions correct and how many questions there were in total. Questions given invalid answers are considered incorrect.
 
-NOTE: CSV files may have questions with commas in them. Eg: "what 2+2, sir?",4 is a valid row in a CSV. I suggest you look into the CSV package in Go and don’t try to write your own CSV parser.
-
 ## Part 2
 
 Adapt your program from part 1 to add a timer. The default time limit should be 30 seconds, but should also be customizable via a flag.
@@ -43,3 +41,9 @@ Your quiz should stop as soon as the time limit has exceeded. That is, you shoul
 Users should be asked to press enter (or some other key) before the timer starts, and then the questions should be printed out to the screen one at a time until the user provides an answer. Regardless of whether the answer is correct or wrong the next question should be asked.
 
 At the end of the quiz the program should still output the total number of questions correct and how many questions there were in total. Questions given invalid answers or unanswered are considered incorrect.
+
+## Running
+Part 1: Build the file and execute the binary, the quiz will pull questions from `problems.csv`
+
+Part 2: Build the file and execute the binary, you can pass in a `-t` flag to change the allowed time (in seconds) for the quiz. The default value is 30 seconds
+Ex: `./part2 -t=10` will run the quiz with 10 seconds

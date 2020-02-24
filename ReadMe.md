@@ -3,6 +3,9 @@
 
 This repository contains my attemts at each of the Golang exercises from [calhoun.io](https://courses.calhoun.io/courses/cor_gophercises). Each directory represents its own exercises and contains a readme about the details of that exercise.
 
+## Sections
+[1: Command line quiz game](https://github.com/Coutlaw/gophercises_solutions/tree/master/Exercise1)
+
 
 ## Running
 
